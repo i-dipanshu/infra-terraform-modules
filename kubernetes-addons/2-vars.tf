@@ -3,6 +3,12 @@ variable "env" {
   type        = string
 }
 
+variable "aws_region" {
+  description = "Region in which cluster is present"
+  type = string
+  default = "eu-west-1"
+}
+
 variable "eks_name" {
   description = "Name of the cluster."
   type        = string

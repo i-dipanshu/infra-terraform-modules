@@ -90,4 +90,10 @@ resource "helm_release" "cluster_autoscaler" {
     name  = "autoDiscovery.clusterName"
     value = var.eks_name
   }
+
+  set {
+    name  = "awsRegion"
+    value = var.aws_region
+  }
+
 }
